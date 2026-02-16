@@ -14,14 +14,16 @@ body {
   .step {
     display: none;
     text-align: center;
-    padding: 2rem;
-    /* Light blue box for questions and content */
-    background: #87CEFA; /* light blue */
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    max-width: 400px;
-    width: 90%;
-    color: #000; /* text inside box is black for readability */
+    padding: 3rem;              /* more internal space */
+    background: #87CEFA;        /* light blue box */
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    
+    width: 95%;
+    max-width: 650px;           /* increased from 400px */
+    min-height: 400px;          /* ensures it's taller */
+    
+    color: #000;
   }
   
   .step.active {
@@ -78,5 +80,36 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
+  }
+  
+  @media (max-width: 600px) {
+    .step {
+      padding: 2rem;
+      max-width: 95%;
+      min-height: 350px;
+    }
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+
+  #photoInput {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+    background: #03334d ;
+    color: #6a8385;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
   }
   
