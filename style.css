@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Deep blue background for whole page */
+    background: linear-gradient(to bottom right, #1C3F7C, #4A90E2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white; /* default text color */
+  }
+  
+  .step {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    /* Light blue box for questions and content */
+    background: #87CEFA; /* light blue */
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 90%;
+    color: #000; /* text inside box is black for readability */
+  }
+  
+  .step.active {
+    display: block;
+  }
+  
+  button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #ffcc00; /* buttons stay yellow */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .options button {
+    width: 100%;
+    margin: 0.3rem 0;
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  .options button.selected {
+    background-color: #ffcc00; /* highlight selected option */
+    color: white;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 15px;
+  }
+  
+  .medal {
+    font-size: 4rem;
+    margin-top: 1rem;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-15px); }
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  

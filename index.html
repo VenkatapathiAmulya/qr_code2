@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gold Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Step 1: Landing -->
+    <div id="step1" class="step active">
+      <h1>You're Officially Going for Gold! 🏅</h1>
+      <button onclick="nextStep(2)">Start Challenge</button>
+    </div>
+
+    <!-- Step 2: Question + Confetti -->
+<div id="step2" class="step">
+    <canvas id="confetti-canvas"></canvas>
+    <h2>Time for Quick question!!</h2>
+    <p>What is Wibey?</p>
+    <div class="options">
+      <button onclick="selectAnswer(this, true)">Wibey is Walmart's Super Agent for Software teams </button>
+      <button onclick="selectAnswer(this, false)"> Wibey is a Social media platform </button>
+      <button onclick="selectAnswer(this, false)"> Wibey is cafeteria ordering system </button>
+      <button onclick="selectAnswer(this, false)">Wibey is cloud storage solution </button>
+    </div>
+    <p id="feedback" style="font-weight:bold; margin-top:10px;"></p>
+    <button onclick="submitAnswer()" id="submitBtn">Submit</button>
+  </div>
+  
+    <!-- Step 3: Photo Upload -->
+    <div id="step3" class="step">
+      <h2>Upload Your Snowman Photo ❄️</h2>
+      <input type="file" accept="image/*" id="photoInput">
+      <img id="preview" src="" alt="Preview" style="display:none;"/>
+    </div>
+
+    <!-- Step 4: Prize Screen -->
+    <div id="step4" class="step">
+      <canvas id="confetti-final"></canvas>
+      <h2>You're Gold Ready! 🥇</h2>
+      <img id="finalPhoto" src="" alt="Uploaded Photo"/>
+      <p>Show this screen to the team to claim your prize — sticker or gold medal!</p>
+      <div class="medal">🏅</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
