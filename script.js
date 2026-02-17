@@ -185,4 +185,21 @@ function startConfetti(canvasId) {
     }, 5000);
   }
   
- 
+  const uploadBtn = document.getElementById('uploadBtn');
+  const photoInput = document.getElementById('photoInput');
+  const preview = document.getElementById('preview');
+  
+  // Trigger the hidden file input
+  uploadBtn.addEventListener('click', () => {
+    photoInput.click();
+  });
+  
+  // Show preview after file selected
+  photoInput.addEventListener('change', function() {
+    const file = this.files[0];
+    if(file){
+      preview.src = URL.createObjectURL(file);
+      preview.style.display = 'block';
+    }
+  });
+  

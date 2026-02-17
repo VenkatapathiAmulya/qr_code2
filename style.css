@@ -109,8 +109,8 @@ body {
   }
 
   #photoInput {
-    font-size: 2.2rem;      /* bigger text */
-    padding: 0.8rem 2.2rem; /* bigger button area */
+    font-size: 4.2rem;      /* bigger text */
+    padding: 0.8rem 4.2rem; /* bigger button area */
     border-radius: 10px;
     background: #03334d ;
     color: #6a8385;
@@ -139,4 +139,20 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+  #uploadBtn {
+    padding: 2.2rem 4rem;         /* large button */
+    font-size: 2.6rem;             /* bigger text */
+    border-radius: 12px;
+    background-color: #03334d;     /* dark blue background */
+    color: #6a8385;                /* text color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  #uploadBtn:hover {
+    transform: scale(1.05);        /* subtle hover effect */
   }
