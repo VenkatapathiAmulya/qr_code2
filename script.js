@@ -46,6 +46,14 @@ function submitAnswer() {
     feedback.innerText = 'Wrong! ❌ Try again.';
     feedback.style.color = 'red';
   }
+  // Add the 'show' class to trigger animation
+  feedback.classList.remove('show'); // reset
+  void feedback.offsetWidth;          // trigger reflow
+  feedback.classList.add('show');
+
+  if (isCorrect) {
+    setTimeout(() => nextStep(3), 1200); // move to next step
+  }
 }
 
 // Photo upload logic
