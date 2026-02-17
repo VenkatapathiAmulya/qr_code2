@@ -33,8 +33,8 @@ body {
   
  
   button {
-    padding: 1rem 2rem;     /* bigger button area */
-    font-size: 1.3rem;      /* bigger text */
+    padding: 4rem 2rem;     /* bigger button area */
+    font-size:2.3rem;      /* bigger text */
     border-radius: 12px;    /* rounded corners */
     background-color: #ffcc00;
     color: #000;
@@ -44,7 +44,7 @@ body {
   }
   
   button:hover {
-    transform: scale(2.05);  /* subtle grow effect on hover */
+    transform: scale(1.05);  /* subtle grow effect on hover */
   }
   
   .options button {
