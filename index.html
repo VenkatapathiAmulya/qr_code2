@@ -9,20 +9,21 @@
   <div id="app">
     <!-- Step 1: Landing -->
     <div id="step1" class="step active">
-      <h1>You're Officially Going for Gold! 🏅</h1>
+      <h1>🎉 You're Officially Going for Gold! 🏅 </h1>
+      <img src="party.gif" alt="Celebration" class="celebration-gif">
       <button onclick="nextStep(2)">Start Challenge</button>
     </div>
 
     <!-- Step 2: Question + Confetti -->
 <div id="step2" class="step">
     <canvas id="confetti-canvas"></canvas>
-    <h2>Time for Quick question!!</h2>
+    <h2>Time for quick Wibey Trivia question!!</h2>
     <p>What is Wibey?</p>
     <div class="options">
-      <button onclick="selectAnswer(this, true)">Wibey is Walmart's Super Agent for Software teams </button>
-      <button onclick="selectAnswer(this, false)"> Wibey is a Social media platform </button>
-      <button onclick="selectAnswer(this, false)"> Wibey is cafeteria ordering system </button>
-      <button onclick="selectAnswer(this, false)">Wibey is cloud storage solution </button>
+      <button onclick="selectAnswer(this, true)">a.Wibey is Walmart's Super Agent for Software teams </button>
+      <button onclick="selectAnswer(this, false)">b.Wibey is a Social media platform </button>
+      <button onclick="selectAnswer(this, false)">c.Wibey is cafeteria ordering system </button>
+      <button onclick="selectAnswer(this, false)">d.Wibey is cloud storage solution </button>
     </div>
     <p id="feedback" style="font-weight:bold; margin-top:10px;"></p>
     <button onclick="submitAnswer()" id="submitBtn">Submit</button>
@@ -30,7 +31,8 @@
   
     <!-- Step 3: Photo Upload -->
     <div id="step3" class="step">
-      <h2>Upload Your Snowman Photo ❄️</h2>
+      <h1>Upload Your Snowman Photo ❄️</h1>
+      <img src="snowman.gif" alt="Celebration" class="celebration-gif">
       <input type="file" accept="image/*" id="photoInput">
       <img id="preview" src="" alt="Preview" style="display:none;"/>
     </div>
@@ -40,10 +42,12 @@
       <canvas id="confetti-final"></canvas>
       <h2>You're Gold Ready! 🥇</h2>
       <img id="finalPhoto" src="" alt="Uploaded Photo"/>
-      <h1>Show this screen to the team to claim your prize — gold medal!</h1>
+      <h1>Show the screen to the Wibey team to receive your gold medal!</h1>
       <div class="medal">🏅</div>
     </div>
   </div>
+
+  
 
   <script src="script.js"></script>
 </body>
