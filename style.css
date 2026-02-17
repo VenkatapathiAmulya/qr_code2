@@ -31,20 +31,20 @@ body {
     display: block;
   }
   
+ 
   button {
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    margin: 0.5rem;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    background: #ffcc00; /* buttons stay yellow */
-    color: #333;
+    padding: 1rem 2rem;     /* bigger button area */
+    font-size: 1.3rem;      /* bigger text */
+    border-radius: 12px;    /* rounded corners */
+    background-color: #ffcc00;
+    color: #000;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
   }
   
   button:hover {
-    transform: scale(1.05);
+    transform: scale(2.05);  /* subtle grow effect on hover */
   }
   
   .options button {
@@ -109,15 +109,15 @@ body {
   }
 
   #photoInput {
-    font-size: 1.2rem;
-    padding: 0.6rem 1.5rem;
+    font-size: 2.2rem;      /* bigger text */
+    padding: 0.8rem 2.2rem; /* bigger button area */
+    border-radius: 10px;
     background: #03334d ;
     color: #6a8385;
-    border: none;
-    border-radius: 12px;
-    font-weight: bold;
     cursor: pointer;
+    font-weight: bold;
   }
+  
   #step1 h1 {
     font-size: 3rem;
     animation: bounce 1s infinite alternate;
