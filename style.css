@@ -20,8 +20,8 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.35);
     
     width: 95%;
-    max-width: 650px;           /* increased from 400px */
-    min-height: 400px;          /* ensures it's taller */
+    max-width: 1000px;           /* increased from 400px */
+    min-height: 1000px;          /* ensures it's taller */
     
     color: #000;
     position: relative;  
